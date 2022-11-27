@@ -23,3 +23,14 @@ string [] arrOfThreeAndLess(int number, string [] beginArr){
     }
     return finalArr;
 }
+
+string [] finalArr1 = (arrOfThreeAndLess(threeOrLess(arr1), arr1));
+for (int j = 0; j < finalArr1.Length; j++){
+        if (j == 0){
+            Console.Write("['" + finalArr1[j] + "', ");
+        }
+        else if (j == finalArr1.Length - 1){
+            Console.WriteLine("'" + finalArr1[j] + "']");
+        }
+        else {Console.Write("'" + finalArr1[j] + "', ");}
+    }
